@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../style3.css">
+</head>
+<body>
+    <header>
+        <h1>Summer Camp Registration</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">Menu 1</a></li>
+                <li><a href="#">Menu 2</a></li>
+                <li><a href="#">Menu 3</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <form>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required><br>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female" required>
+            <label for="female">Female</label><br>
+
+            <label for="city">City:</label><br>
+            <select id="city" name="city" required>
+                <option value="">Select City</option>
+                <option value="newyork">New York</option>
+                <option value="london">London</option>
+                <option value="tokyo">Tokyo</option>
+            </select><br>
+
+            <label>Hobbies:</label><br>
+            <input type="checkbox" id="hobby1" name="hobbies" value="hobby1">
+            <label for="hobby1">Hobby 1</label>
+            <input type="checkbox" id="hobby2" name="hobbies" value="hobby2">
+            <label for="hobby2">Hobby 2</label>
+            <input type="checkbox" id="hobby3" name="hobbies" value="hobby3">
+            <label for="hobby3">Hobby 3</label><br>
+
+            <label for="photo">Photo:</label>
+            <input type="file" id="photo" name="photo" accept="image/*" required><br>
+
+            <label for="idProof">ID Proof:</label>
+            <input type="file" id="idProof" name="idProof" required><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </main>
+    <footer>
+        &copy; 2023 Summer Camp
+    </footer>
+</body>
+</html>

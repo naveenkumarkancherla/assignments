@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    pre {
+        background-color: lightgray;
+        padding: 10px;
+        margin: 10px;
+        font-family: Arial, sans-serif;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    table, th, td {
+        border: 1px solid black;
+    }
+
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: lightblue;
+    }
+    .colspan {
+        background-color: lightgreen;
+    }
+
+    .rowspan {
+        background-color: lightyellow;
+    }
+    </style>
+</head>
+<body>
+    <pre>
+        <code>
+            line 1 of code
+            line 2 of code
+        </code>
+    </pre>
+
+    <table>
+        <tr>
+            <th>Header 1</th>
+            <th>Header 2</th>
+        </tr>
+        <tr>
+            <td>Cell 1</td>
+            <td class="colspan" colspan="2">Cell 2 (colspan 2)</td>
+        </tr>
+        <tr>
+            <td class="rowspan" rowspan="2">Cell 3 (rowspan 2)</td>
+            <td>Cell 4</td>
+        </tr>
+        <tr>
+            <td>Cell 5</td>
+        </tr>
+    </table>
+</body>
+</html>

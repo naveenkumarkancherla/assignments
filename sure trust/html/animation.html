@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>animation demo</title>
+  <style>
+    
+    h1 { 
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      animation-name: colorchanginganimation;
+      animation-duration: 6s;
+      position: relative;
+      animation-delay:2s;
+      animation-iteration-count:5; 
+      animation-timing-function: ease-in;
+      font-size:30px;
+    }
+    
+    @keyframes colorchanginganimation{ 
+    from{
+        background-color:pink;
+        width:200px;
+        }
+    to{
+        background-color:yellow;
+        width:250px;
+      }
+
+    0%{
+        background-color: green;
+        width: 100px;
+        left: 0; 
+      }
+    25%{
+        background-color: red;
+        width: 300px;
+        left: 50%; 
+       }
+    50%{
+        background-color: blue;
+        width: 250px;
+        left: 25%; 
+       }
+    75%{
+        background-color: yellow;
+        width: 200px;
+        left: 75%; 
+       }
+    100%{
+        background-color: green;
+        width: 100px;
+        right: 0; 
+       }
+    }
+  </style>
+  
+</head>
+<h1>भारत निर्वाचन आयोग</h1>
+</body>
+
+</html>

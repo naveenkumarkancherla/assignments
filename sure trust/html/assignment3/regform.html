@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Summer Camp Registration Form</title>
+  <link rel="stylesheet"  href="../css/regformstyle.css">
+</head>
+<body>
+  <aside>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Camp Schedule</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  <main>
+    <h1>Summer Camp Registration</h1>
+
+    <form action="submit_form.php" method="POST" enctype="multipart/form-data">
+      <label for="firstName">First Name:</label>
+      <input type="text" id="firstName" name="firstName" required>
+
+      <label for="lastName">Last Name:</label>
+      <input type="text" id="lastName" name="lastName" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phoneNumber">Phone Number:</label>
+      <input type="tel" id="phoneNumber" name="phoneNumber" required>
+
+      <label>Gender:</label>
+      <label for="male">
+        <input type="radio" id="male" name="gender" value="male" required> Male
+      </label>
+      <label for="female">
+        <input type="radio" id="female" name="gender" value="female" required> Female
+      </label>
+      <label for="other">
+        <input type="radio" id="other" name="gender" value="other" required> Other
+      </label>
+
+      <label for="city">City:</label>
+      <select id="city" name="city" required>
+        <option value="">Select City</option>
+        <option value="New York">New York</option>
+        <option value="Los Angeles">Los Angeles</option>
+        <option value="Chicago">Chicago</option>
+        <option value="Houston">Houston</option>
+        <option value="Other">Other</option>
+      </select>
+
+      <label>Hobbies:</label>
+      <label for="hobby1">
+        <input type="checkbox" id="hobby1" name="hobbies" value="Reading"> Reading
+      </label>
+      <label for="hobby2">
+        <input type="checkbox" id="hobby2" name="hobbies" value="Sports"> Sports
+      </label>
+      <label for="hobby3">
+        <input type="checkbox" id="hobby3" name="hobbies" value="Music"> Music
+      </label>
+      <label for="hobby4">
+        <input type="checkbox" id="hobby4" name="hobbies" value="Art"> Art
+      </label>
+
+      <label for="photo">Photo:</label>
+      <input type="file" id="photo" name="photo" accept="image/*" required>
+
+      <label for="idproof">ID Proof:</label>
+      <input type="file" id="idproof" name="idproof" accept="image/*" required>
+
+      <input type="submit" value="Register">
+    </form>
+  </main>
+
+  <footer>
+   <p>&copy; all rights reserved</p>
+  </footer>
+</body>
+</html>
